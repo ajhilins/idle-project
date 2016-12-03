@@ -14,5 +14,7 @@ Ascension: Currency used to purchase upgrades
 
 
 #implementation
-
+1. core folder creation
+2. index.html
+3. main.js
 
