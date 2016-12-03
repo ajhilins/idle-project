@@ -8,6 +8,15 @@ Ascension: Currency used to purchase upgrades
 		cold(deathrate increased))
 		
 2. World size changes (influences reproduction pace)
+3. Organisms
+  live in the world and have various stats which affect behavior
+  stats:
+    reproduction time/delay
+    production rate
+    tier (which organisms can feed on which others)
+    number of mates
+    speed of movement
+    probability for mutation on reproduction
 
 #design
 
