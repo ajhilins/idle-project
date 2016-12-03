@@ -17,6 +17,7 @@ Ascension: Currency used to purchase upgrades
     number of mates
     speed of movement
     probability for mutation on reproduction
+    consumption rate for reproduction
 
 #design
 
@@ -28,4 +29,11 @@ Ascension: Currency used to purchase upgrades
 3. main.js
 World should be a class which includes a list of organisms
 Organism should be a class which includes variables for each stat
-
+  variables
+    number reproductionTime
+    number productionRate
+    number tier
+    number mates
+    number speed
+    number mutation
+    number consumptionRate
