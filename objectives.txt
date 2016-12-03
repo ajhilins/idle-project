@@ -1,11 +1,18 @@
 #concept
 
 
+Ascension: Currency used to purchase upgrades
+1. World condition changes (
+		hot(deathrate reduced) 
+		medium(average) 
+		cold(deathrate increased))
+		
+2. World size changes (influences reproduction pace)
 
 #design
 
 
 
-#code
+#implementation
 
 
