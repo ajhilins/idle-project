@@ -2,13 +2,17 @@
 
 
 Ascension: Currency used to purchase upgrades
-1. World condition changes (
+1. World
+  stats:
+    condition
+    size (influences reproduction pace)
+    
+  condition changes (
 		hot(deathrate reduced) 
 		medium(average) 
 		cold(deathrate increased))
-		
-2. World size changes (influences reproduction pace)
-3. Organisms
+ 
+2. Organisms
   live in the world and have various stats which affect behavior
   stats:
     reproduction time/delay
@@ -18,9 +22,23 @@ Ascension: Currency used to purchase upgrades
     speed of movement
     probability for mutation on reproduction
     consumption rate for reproduction
+    lifespan
+    
+3. Building that perform various tasks
+  tasks:
+    food storage
+    organism stat changes globally:
+      reproduction time
+      production rate
+      lifespan
+      speed of movement
+
+4. Science/Research
+  upgrade mutation probability
 
 #design
-
+button to produce initial food
+button to produce lowest stats organism
 
 
 #implementation
