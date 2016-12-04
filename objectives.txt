@@ -23,6 +23,8 @@ Ascension: Currency used to purchase upgrades
     probability for mutation on reproduction
     consumption rate for reproduction
     lifespan
+  other variables:
+    position
     
 3. Building that perform various tasks
   tasks:
