@@ -1,6 +1,4 @@
 #concept
-
-
 Ascension: Currency used to purchase upgrades
 1. World
   stats:
