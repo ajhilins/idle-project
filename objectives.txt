@@ -10,7 +10,7 @@ Ascension: Currency used to purchase upgrades
 		medium(average) 
 		cold(deathrate increased))
  
-2. Organisms
+2. Organism
   live in the world and have various stats which affect behavior
   stats:
     reproduction time/delay
@@ -24,7 +24,7 @@ Ascension: Currency used to purchase upgrades
   other variables:
     position
     
-3. Building that perform various tasks
+3. Buildings that perform various tasks
   tasks:
     food storage
     organism stat changes globally:
