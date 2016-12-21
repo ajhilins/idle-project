@@ -3,6 +3,7 @@ make sure to export everything
 import Pair
 class Organism
   fields :
+    Pair position
     integer reproductionTime
     integer reproductionDelay
     integer productionRate
@@ -12,9 +13,9 @@ class Organism
     integer mutationProbability
     integer lifespan
     integer consumptionRate
-    Pair position
+    integer litterSize
     
-  methods :
+  functions :
     display : ->
     display() {
       side effects :

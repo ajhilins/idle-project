@@ -11,7 +11,7 @@ class Building
     integer productionRateChange
     integer speedChange
     
-  methods :
+  functions :
     display : ->
     display() {
       side effects :
