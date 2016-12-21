@@ -12,11 +12,10 @@ function Pair(x, y) {
 
 origin = new Pair(0, 0);
 
-/*
+/* Organism
 class Organism
   fields :
     Pair position
-    integer reproductionTime
     integer reproductionDelay
     integer productionRate
     integer tier
@@ -51,9 +50,14 @@ class Organism
       side effects :
         changed groupedWith of parameters to this.id
     }
+    
+    produce : -> Integer
+    produce() {
+      return Integer //this.productionRate
+    }
 */
 
-/*
+/* Building
 class Building
   fields :
     Pair position
@@ -72,7 +76,7 @@ class Building
     }
 */
 
-/*
+/* World
 class World
   fields :
     integer temperature
@@ -83,6 +87,7 @@ class World
       -each Organism and Building is at its position Pair
     array organisms
     array buildings
+    integer foodInStores
     integer tickFrequency
     integer totalFoodStorage
     integer totalLifeSpanChange
@@ -137,5 +142,13 @@ class World
     formGroup(org1, org2, ...) {
       functions to use :
         Organism.formGroup(Organism, Organism, ...)
+    }
+    
+    produce : ->
+    produce() {
+      functions to use :
+        Organism.produce()
+      side effects :
+        add food produced by all organisms to foodInStores
     }
 */
