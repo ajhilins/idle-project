@@ -79,7 +79,7 @@ class Building
 //Building constructor
 function Building(position, type, foodStorage, lifespanChange, reproductionTimeChange, productionRateChange, speedChange) {
   this.position = position;
-  this.type = type;
+  this.type = type; //this may be unneccesary
   this.foodStorage = foodStorage;
   this.lifespanChange = lifespanChange;
   this.reproductionTimeChange = reproductionTimeChange;
