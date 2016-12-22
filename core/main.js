@@ -103,11 +103,6 @@ class World
         Building.display()
     }
     
-    generateRandom : -> random decimal in [0, 1)
-    generateRandom() {
-      return randomDecimal
-    }
-    
     findEncounters : -> 
     findEncounters() {
       functions to use :
@@ -150,5 +145,12 @@ class World
         Organism.produce()
       side effects :
         add food produced by all organisms to foodInStores
+    }
+    
+    tick : ->
+    tick() {
+      functions to use :
+        World.produce()
+        World.findEncounters()
     }
 */
