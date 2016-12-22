@@ -76,6 +76,20 @@ class Building
     }
 */
 
+//Building constructor
+function Building(position, type, foodStorage, lifespanChange, reproductionTimeChange, productionRateChange, speedChange) {
+  this.position = position;
+  this.type = type;
+  this.foodStorage = foodStorage;
+  this.lifespanChange = lifespanChange;
+  this.reproductionTimeChange = reproductionTimeChange;
+  this.productionRateChange = productionRateChange;
+  this.speedChange = speedChange;
+  this.display = function() {
+    //finish display
+  }
+}
+
 /* World
 class World
   fields :
