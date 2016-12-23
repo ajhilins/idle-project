@@ -22,7 +22,7 @@ class Organism
     integer numberOfMates
     integer speed
     integer mutationProbability
-    integer lifespan
+    integer lifeSpan
     integer consumptionRate
     integer litterSize
     integer id
@@ -95,7 +95,7 @@ class World
   fields :
     integer temperature
     Pair size
-    other conditions? (arid, humid, others?)
+    other conditions? (arid, humid, others?, tectonic events, natural disasters, precipitation, wildfires)
     arrayOfArrays map (contains both organisms and buildings)
       -size is the size of the world
       -each Organism and Building is at its position Pair
@@ -168,3 +168,38 @@ class World
         World.findEncounters()
     }
 */
+
+function World(temperature, size, map, organisms, buildings, foodInStores, tickFrequency, totalFoodStorage, totalLifeSpanChange,
+  totalReproductionRateChange, totalProductionRateChange, totalSpeedChange) {
+    this.temperature = temperature;
+    this.size = size;
+    this.map = map;
+    this.organisms = organisms;
+    this.buildings = buildings; 
+    this.foodInStores = foodInStores;
+    this.tickFrequency = tickFrequency;
+    this.totalFoodStorage = totalFoodStorage;
+    this.totalLifeSpanChange = totalLifeSpanChange; 
+    this.totalReproductionRateChange = totalReproductionRateChange;
+    this.totalProductionRateChange = totalProductionRateChange;
+    this.totalSpeedChange = totalSpeedChange;
+    
+    this.display = function() {
+      //finish display
+    }
+    
+    this.findEncounters = function() {
+      //use World.encounter
+    }
+    
+    this.encounter = function() {
+      //use arguments[]
+      //World.reproduce
+      //World.preyUpon
+      //World.formGroup
+    }
+    
+    this.reproduce = function() {
+      //use arguments[]
+    }
+}
