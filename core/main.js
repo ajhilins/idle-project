@@ -55,6 +55,11 @@ class Organism
     produce() {
       return Integer //this.productionRate
     }
+    
+    determineEncounter : -> Integer
+    determineEncounter() {
+      return Integer //0 for reproduce, 1 for formGroup, 2 for preyUpon
+    }
 */
 
 /* Building
@@ -194,6 +199,7 @@ function World(temperature, size, map, organisms, buildings, foodInStores, tickF
     
     this.encounter = function() {
       //use arguments[]
+      //Organism.determineEncounter
       //World.reproduce
       //World.preyUpon
       //World.formGroup
