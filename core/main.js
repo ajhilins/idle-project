@@ -201,5 +201,32 @@ function World(temperature, size, map, organisms, buildings, foodInStores, tickF
     
     this.reproduce = function() {
       //use arguments[]
+      //Organism.reproduce
+    }
+    
+    this.preyUpon = function(org1, org2) {
+      //use Organism.preyUpon
+    }
+    
+    this.formGroup = function() {
+      //use arguments[]
+      //Organism.formGroup
+    }
+    
+    this.produce = function() {
+      for (var i = 0; i < this.organisms.length, i++) {
+        var producedByOrganismI = this.organisms[i].produce();
+        if ((this.foodInStores + producedByOrganismI) <= this.totalFoodStorage) {
+          this.foodInStores += producedByOrganismI;
+        } else {
+          this.foodInStores = this.totalFoodStorage;
+          return;
+        }
+      }
+    }
+    
+    this.tick = function() {
+      this.produce();
+      //World.findEncounters
     }
 }
